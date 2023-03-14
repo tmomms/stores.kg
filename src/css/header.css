@@ -1,0 +1,154 @@
+.header_title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 22px;
+    height: 55px;
+    width:auto;
+    background: linear-gradient(90.35deg, rgba(17, 24, 39, 2) 0.36%, #D946EF 85.02%);
+    color: white;
+}
+
+.iphone_photo{
+    width: 30px;
+    height: 40px;
+}
+
+.header_title p {
+font-style: normal;
+font-weight: 600;
+font-size: 22px;
+line-height: 27px;
+}
+
+.nav {
+    display: flex;
+    justify-content:space-between;
+    height: 67px;
+    margin: 0 40px;
+}
+.nav_logo {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav_logo img{
+    width: 125px;
+    height: 35px;
+}
+
+.location{
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    gap:5px;
+}
+.location div{
+    margin-top: 20px;
+    width: 115px;
+    height:48px;
+}
+.location p {
+    font-size: 12px;
+}
+.location p:last-child{
+    color: #808080;
+}
+
+/* search begin */
+
+.search_field {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.catalog{
+    gap: 15px;
+    width: 129px;
+}
+#catalog{
+    justify-content: start;
+}
+
+.search_input{
+    display: flex;
+    justify-content: end;
+    border: 1px solid #F58735;
+    border-radius: 10px;
+    width: 540px;
+}
+
+.button_search{
+    border-bottom-left-radius: 0px;
+}
+
+.search{
+    padding-left: 15px;
+    border-radius: 8px;
+    width: 100%;
+}
+
+.select, .search{
+    border:none;    
+}
+.select{
+    text-transform: uppercase;
+    color: #808080;
+}
+.svg, .svg_icons {
+    display: flex;
+    justify-content: center;
+    color: #000000;
+    align-items: center;
+}
+
+.svg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+.svg_icons{
+    padding: 5px;
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.svg_icons:hover{
+    border-radius: 5px;
+    background-color:#F58735;
+    color: white;
+    fill: white;
+    transition: all ease 0.2s;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: #F58735;
+    border-radius: 8px;   
+    border: none;   
+    padding: 8px 15px;
+    color: white;
+    height: 48px;
+}
+
+#search_buttonID{
+    width: 18%;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+/* media  */
+
+@media (max-width:1220px) {
+    .search_input{
+        width: 80%;
+    }
+}
