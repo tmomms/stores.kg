@@ -5,7 +5,6 @@ const SetColorDiv = ({ colors }) => {
     <div className='color_container'>
       {colors.map((color, index) => (
         <div key={index} className='div_color' style={{ backgroundColor: color }}>
-          
         </div>
       ))}
     </div>

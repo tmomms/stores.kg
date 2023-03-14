@@ -1,12 +1,14 @@
 import React from "react";
 import SetColorDiv from '../jsx.pages/main_coloredit';
+import Card from "../jsx.pages/mainContentCard";
 
 import '../css/main.css';
 import '../app.css';
 
 import Superfast from '../images/Superfast.png';
-import SortIcon from '../images/sort-icon.svg';
-import SortIcon2 from '../images/sort-icon2.svg';
+// import SortIcon from '../images/sort-icon.svg';
+// import SortIcon2 from '../images/sort-icon2.svg';
+import cardImg from "../images/card-img-iphone.png";
 
 
 
@@ -246,6 +248,7 @@ function Main() {
             </div>
         </section>
         <section className="content">
+            <div className="content_title">
             <div className="sort">
                 <ul className="sort_ul">
                     <li className="sort_li">Сортировать по:</li>
@@ -257,8 +260,26 @@ function Main() {
                 </ul>
             </div>
             <div className="sort-icon">
-                {/* <img src={SortIcon} alt="" />
-                <img src={SortIcon2} alt="" /> */}
+            <svg className="sort_icon_active" xmlns="http://www.w3.org/2000/svg" width="15" viewBox="0 0 24 24"><path d="M4 22h-4v-4h4v4zm0-12h-4v4h4v-4zm0-8h-4v4h4v-4zm3 0v4h17v-4h-17zm0 12h17v-4h-17v4zm0 8h17v-4h-17v4z"/></svg>
+            <svg clip-rule="evenodd" width='19' fill='#808080' fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m14.865 16.6c0-.53-.47-1-1-1h-3.73c-.53 0-1 .47-1 1v2.4c0 .53.47 1 1 1h3.73c.53 0 1-.47 1-1zm-7.135 0c0-.53-.47-1-1-1h-3.73c-.53 0-1 .47-1 1v2.4c0 .53.47 1 1 1h3.73c.53 0 1-.47 1-1zm14.27 0c0-.53-.47-1-1-1h-3.73c-.53 0-1 .47-1 1v2.4c0 .53.47 1 1 1h3.73c.53 0 1-.47 1-1zm-7.135-5.8c0-.53-.47-1-1-1h-3.73c-.53 0-1 .47-1 1v2.4c0 .53.47 1 1 1h3.73c.53 0 1-.47 1-1zm-7.135 0c0-.53-.47-1-1-1h-3.73c-.53 0-1 .47-1 1v2.4c0 .53.47 1 1 1h3.73c.53 0 1-.47 1-1zm14.27 0c0-.53-.47-1-1-1h-3.73c-.53 0-1 .47-1 1v2.4c0 .53.47 1 1 1h3.73c.53 0 1-.47 1-1zm-7.135-5.8c0-.53-.47-1-1-1h-3.73c-.53 0-1 .47-1 1v2.4c0 .53.47 1 1 1h3.73c.53 0 1-.47 1-1zm-7.135 0c0-.53-.47-1-1-1h-3.73c-.53 0-1 .47-1 1v2.4c0 .53.47 1 1 1h3.73c.53 0 1-.47 1-1zm14.27 0c0-.53-.47-1-1-1h-3.73c-.53 0-1 .47-1 1v2.4c0 .53.47 1 1 1h3.73c.53 0 1-.47 1-1z" fill-rule="nonzero"/></svg>
+            </div>
+            </div>
+            <div className="content_field">
+                <h3>Лучшее предложение</h3>
+                <p>Посмотреть все товары</p>
+            </div>
+            <Card src={cardImg} ProductText={"Iphone 14 pro max"} prise={'78.000'}/>
+            <Card src={cardImg} ProductText={"Iphone 14 pro max"} prise={'78.000'}/>
+            <Card src={cardImg} ProductText={"Iphone 14 pro max"} prise={'78.000'}/>
+            <div className="last_next_buttons">
+                <span className="span_arrow"><svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M20 .755l-14.374 11.245 14.374 11.219-.619.781-15.381-12 15.391-12 .609.755z"/></svg></span>
+                <span>1</span>
+                <span>2</span>
+                <span>3</span>
+                <span>4</span>
+                <span>...</span>
+                <span>20</span>
+                <span><svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M4 .755l14.374 11.245-14.374 11.219.619.781 15.381-12-15.391-12-.609.755z"/></svg></span>
             </div>
         </section>
         </main>
