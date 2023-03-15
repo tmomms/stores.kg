@@ -1,6 +1,8 @@
 import React from "react";
 import SetColorDiv from '../jsx.pages/main_coloredit';
 import Card from "../jsx.pages/mainContentCard";
+import Card_G from "../jsx.pages/mainContentCardG";
+
 
 import '../css/main.css';
 import '../app.css';
@@ -268,9 +270,19 @@ function Main() {
                 <h3>Лучшее предложение</h3>
                 <p>Посмотреть все товары</p>
             </div>
+            <div className="content_gorizontal">
+                  <Card_G src={cardImg} ProductText='iphone 13 pro max' prise="85,000"/>
+                  <Card_G src={cardImg} ProductText='iphone 13 pro max' prise="85,000"/>
+                  <Card_G src={cardImg} ProductText='iphone 13 pro max' prise="85,000"/>
+                  <Card_G src={cardImg} ProductText='iphone 13 pro max' prise="85,000"/>
+
+            </div>
+            <div className="content_vertical">
             <Card src={cardImg} ProductText={"Iphone 14 pro max"} prise={'78.000'}/>
             <Card src={cardImg} ProductText={"Iphone 14 pro max"} prise={'78.000'}/>
             <Card src={cardImg} ProductText={"Iphone 14 pro max"} prise={'78.000'}/>
+            <Card src={cardImg} ProductText={"Iphone 14 pro max"} prise={'78.000'}/>
+            </div>
             <div className="last_next_buttons">
                 <span className="span_arrow"><svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M20 .755l-14.374 11.245 14.374 11.219-.619.781-15.381-12 15.391-12 .609.755z"/></svg></span>
                 <span>1</span>
