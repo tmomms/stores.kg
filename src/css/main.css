@@ -229,7 +229,7 @@ height: 23px;
 }
 
 .content_card{
-    width: 1180px;
+    max-width: 1180px;
     display: flex;
     justify-content: space-around;
     gap: 100px;
@@ -343,7 +343,7 @@ line-height: 20px;
 }
 .basket_button{
     margin-top: 35px;
-    width: 184px;
+    width: 170px;
     height: 36px;
     cursor: pointer;
 }
@@ -397,32 +397,45 @@ border-radius: 5px;
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin-top: -5px;
-    font-size: 22px;
     cursor: pointer;
-    width: 40px;
-    height: 40px;
+    color: #A0AEC0;
+    font-weight: 500;
+    font-size: 14px;
+    padding: 9px 15px;
+    line-height: 160%;
 }
 
 .last_next_buttons span:hover{
     border-radius: 15px;
-    background-color:#b5b5b5;
-    margin-top: -5px;
-    font-size: 22px;
+    color:#4268B0;
     cursor: pointer;
+    background: rgba(115, 185, 255, 0.1);
+    border-radius: 12px;
 }
 
+.arrow_right img{
+    transform: scale(-1, 1);
+    z-index: 500;
+}
 
 
 /* gorizontal card begin */
 .content_gorizontal{
+    max-width:1050px;
     display: flex;
-    overflow: hidden;
-    overflow-x: hidden;
+    overflow-x:scroll;
+}
+.content_gorizontal::-webkit-scrollbar {
+    width: 0;
+  }
+@media(max-width:1340px){
+    .gorizontal_card{
+        max-width: 700px;
+    }
 }
 .gorizontal_card{
     border: 1px solid #c0c0c0;
-    width: 234px;
+    width: 235px;
     margin: 16px 16px 16px 0;
     border-radius: 5px;
 }
@@ -453,8 +466,6 @@ border-radius: 5px;
     margin-right: -5px;
 }
 
-.product_info_gorizontal{
-}
 .product_info_h3{
     margin-bottom: 8px;
     text-transform: capitalize;
@@ -462,7 +473,7 @@ border-radius: 5px;
 }
 
 .prise_field_gorizontal{
-    margin:14px 0 8px 0;
+    margin:8px 0 8px 0;
 }
 
 .prise_field_gorizontal_p{
@@ -484,9 +495,67 @@ color: #AAADB2;
 }
 
 .buttons_gorizontal{
-    margin: 16px 0 16px 8px;
+    margin: 16px 0 16px 0px;
 }
 
 .text_content_gorizontal{
     padding-left: 15px;
+}
+
+
+/* scroll arrow */
+/* applink */
+
+.scroll_arrow{
+    position: absolute;
+    top: 75%;
+    left: 93%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 16px rgba(61, 63, 70, 0.15);
+}
+
+.scroll_arrow_img{
+    width: 15px;
+    height: 15px;
+}
+
+
+.scroll_arrow_main{
+    position: absolute;
+    top: 76%;
+    left: 22%;
+    transform: scaleX(-1);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 16px rgba(61, 63, 70, 0.15);
+    border: none;
+}
+
+.scroll_arrow_modal_main{
+        position: absolute;
+        top: 76%;
+        left: 94%;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background: #FFFFFF;
+        box-shadow: 0px 2px 16px rgba(61, 63, 70, 0.15);
+        border: none;
 }

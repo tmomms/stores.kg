@@ -4,7 +4,7 @@ import StarIconNone from "../jsx.pages/mainStarIconNone";
 import '../css/main.css';
 import '../app.css';
 
-function Card_G({src, ProductText, prise}) {
+function Cardg({src, ProductText, prise}) {
     return(
         <div className="gorizontal_card">
         <div className="card_img_div">
@@ -46,4 +46,4 @@ function Card_G({src, ProductText, prise}) {
     )
 }
 
-export default Card_G;
+export default Cardg;

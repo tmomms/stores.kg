@@ -1,0 +1,75 @@
+.footer_ul{
+    display: flex;
+    flex-direction: column;
+    margin-top: 65px;
+}
+.footer{
+    background-color:#707987;
+}
+
+.footer_uls{
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    color: white;
+}
+
+.footer_ul p{
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.footer_ul a{
+    font-size: 12px;
+    color: white;
+    font-weight: 400;
+    line-height: 15px;
+}
+
+.footer_bottom{
+    margin-top: 35px;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: end;
+    padding-bottom: 50px;
+}
+
+.footer_bottom p{
+font-weight: 500;
+font-size: 16px;
+line-height: 19px;
+text-transform:none;
+}
+
+.footer_card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: -10px;
+}
+.mastercard{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.mastercard p{
+    font-size: 8px;
+    margin-top: -15px;
+}
+.footer_bottom img{
+
+}
+
+.footer_network_icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+#footer_card_p{
+    margin-bottom: 0px;
+}

@@ -1,0 +1,49 @@
+.app_link{
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    gap: 80px;
+    background-color: #F5F5F5;
+    height: 330px;
+    margin-top: 85px;
+    margin-bottom: 70px;
+}
+
+.app_link_text h2{
+    max-width: 363px;
+    font-weight: 700;
+font-size: 26px;
+line-height: 36px;
+}
+
+.app_link_container{
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+.app_link_a{
+    cursor: pointer;
+    color: white;
+    background-color: black;
+    width: 130px;
+    height: 40px;
+    border: 1px solid #000;
+    display: flex;
+    align-items: center;
+    padding: 4px 6px;
+    border-radius: 6px;
+}
+.app_link_a img{
+    margin-right: 6px;
+}
+
+.app_link_qr p{
+margin-top: 11px;
+width: 138px;
+height: 66px;
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 22px;
+color: #666666;
+}

@@ -1,17 +1,17 @@
 import React from "react";
 import SetColorDiv from '../jsx.pages/main_coloredit';
 import Card from "../jsx.pages/mainContentCard";
-import Card_G from "../jsx.pages/mainContentCardG";
+import Cardg from "../jsx.pages/mainContentCardG";
 
 
 import '../css/main.css';
 import '../app.css';
 
 import Superfast from '../images/Superfast.png';
-// import SortIcon from '../images/sort-icon.svg';
-// import SortIcon2 from '../images/sort-icon2.svg';
 import cardImg from "../images/card-img-iphone.png";
-
+import arrow from "../icons/arrow.svg";
+import scrollArrow from "../icons/scroll_arrow.png";
+import ScrollButtonsMain from "./DragScrollMain";
 
 
 function Main() {
@@ -271,11 +271,8 @@ function Main() {
                 <p>Посмотреть все товары</p>
             </div>
             <div className="content_gorizontal">
-                  <Card_G src={cardImg} ProductText='iphone 13 pro max' prise="85,000"/>
-                  <Card_G src={cardImg} ProductText='iphone 13 pro max' prise="85,000"/>
-                  <Card_G src={cardImg} ProductText='iphone 13 pro max' prise="85,000"/>
-                  <Card_G src={cardImg} ProductText='iphone 13 pro max' prise="85,000"/>
-
+                <ScrollButtonsMain>
+                </ScrollButtonsMain>
             </div>
             <div className="content_vertical">
             <Card src={cardImg} ProductText={"Iphone 14 pro max"} prise={'78.000'}/>
@@ -284,17 +281,21 @@ function Main() {
             <Card src={cardImg} ProductText={"Iphone 14 pro max"} prise={'78.000'}/>
             </div>
             <div className="last_next_buttons">
-                <span className="span_arrow"><svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M20 .755l-14.374 11.245 14.374 11.219-.619.781-15.381-12 15.391-12 .609.755z"/></svg></span>
+                <span>
+                <img src={arrow} alt="" />
+                </span>
                 <span>1</span>
                 <span>2</span>
                 <span>3</span>
                 <span>4</span>
                 <span>...</span>
                 <span>20</span>
-                <span><svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M4 .755l14.374 11.245-14.374 11.219.619.781 15.381-12-15.391-12-.609.755z"/></svg></span>
+                <span className="arrow arrow_right">
+                <img src={arrow} alt="" />
+                </span>
             </div>
         </section>
-        </main>
+            </main>
     )
 }
 
