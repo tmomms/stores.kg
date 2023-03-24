@@ -1,4 +1,4 @@
-import '../app.css';
+import '../App.css';
 import '../css/appLink.css'
 import React from 'react';
 import googlePlay from '../icons/google play.png'

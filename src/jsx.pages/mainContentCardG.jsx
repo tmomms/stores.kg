@@ -2,7 +2,7 @@ import React from 'react';
 import StarIcon from "../jsx.pages/mainStarIcon";
 import StarIconNone from "../jsx.pages/mainStarIconNone";
 import '../css/main.css';
-import '../app.css';
+import '../App.css';
 
 function Cardg({src, ProductText, prise}) {
     return(

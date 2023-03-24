@@ -5,7 +5,7 @@ import Cardg from "../jsx.pages/mainContentCardG";
 
 
 import '../css/main.css';
-import '../app.css';
+import '../App.css';
 
 import Superfast from '../images/Superfast.png';
 import cardImg from "../images/card-img-iphone.png";

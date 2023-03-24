@@ -1,5 +1,5 @@
 import React from "react";
-import '../app.css';
+import '../App.css';
 import '../css/header.css';
 import logo from '../images/Logo.png';
 import navLogo from '../images/nav_logo_iphone.png';
