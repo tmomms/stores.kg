@@ -10,4 +10,6 @@
 `git clone https://gitlab.com/tmomms/stores-kg-react.git` 
 4. запускаем загруженный проект на редакторе 
 5. устанавливаем нужные ресурсы для запуска проекта `npm i`
-6. запускаем проект `npm start`  
+6. для разработки пишем `npm run dev`
+7. для продакшна `npm run build`
+6. запускаем проект `npm start`
