@@ -441,7 +441,7 @@ border-radius: 5px;
 }
 .card_img_div{
     display: flex;
-    align-items: end;
+    align-items: flex-end;
     margin: 0 10px;
 }
 

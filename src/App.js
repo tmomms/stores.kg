@@ -1,5 +1,4 @@
-import { React } from "react";
-
+import {React} from "react";
 import Header from "./jsx.pages/header";
 import Main from "./jsx.pages/main";
 import AppLink from "./jsx.pages/appLink";

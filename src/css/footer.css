@@ -31,7 +31,7 @@
     color: white;
     display: flex;
     justify-content: space-around;
-    align-items: end;
+    align-items: flex-end;
     padding-bottom: 50px;
 }
 
@@ -59,9 +59,7 @@ text-transform:none;
     font-size: 8px;
     margin-top: -15px;
 }
-.footer_bottom img{
 
-}
 
 .footer_network_icons{
     display: flex;

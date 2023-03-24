@@ -74,7 +74,7 @@ line-height: 27px;
 
 .search_input{
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
     border: 1px solid #F58735;
     border-radius: 10px;
     width: 540px;
